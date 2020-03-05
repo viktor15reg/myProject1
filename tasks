@@ -6,9 +6,9 @@ function getMin(arr){
   return Math.min.apply(null, arr );     
 }
 
-// функция выводящая четные числа
+console.log(getMin());
 
- console.log(getMin());
+ // функция выводящая четные числа
 
  function getEvent(arr){
   arr = [5, 67, 4, 98, 73, 88, 50]
@@ -20,3 +20,38 @@ function getMin(arr){
 }
 
  getEvent();
+
+ // ещё одна функция выводящая четные числа
+
+ 
+let arr = [5, 67, 4, 98, 73, 88, 50];
+arr = arr.filter(function(elem) {
+  return elem % 2==0;
+})
+
+ alert(arr);
+
+ // задание 4:
+
+ let user = [
+   
+     {name:'Jonny Walker', birthDate:'1993-11-24', eyeColor:'blue'},
+     {name:'Andrew', birthDate:'2005-03-05', eyeColor:'green'},
+     {name:'Viktor', birthDate:'1980-12-17', eyeColor:'grey'} 
+];  
+
+    user.name='Viktor';
+
+   function searhByName(name) {
+   
+     
+    if(user.name==='Jonny Walker'){
+	    return(user[0]);
+    }else if(user.name==='Andrew'){
+    	return(user[1]);
+    }else{
+    	return(user[2]);
+    }
+ }
+
+console.log(searhByName());
