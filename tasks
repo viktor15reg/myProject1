@@ -33,25 +33,17 @@ arr = arr.filter(function(elem) {
 
  // задание 4:
 
- let user = [
+ let users = [
    
      {name:'Jonny Walker', birthDate:'1993-11-24', eyeColor:'blue'},
      {name:'Andrew', birthDate:'2005-03-05', eyeColor:'green'},
      {name:'Viktor', birthDate:'1980-12-17', eyeColor:'grey'} 
 ];  
 
-    user.name='Viktor';
+function searhByName(name) {
 
-   function searhByName(name) {
-   
-     
-    if(user.name==='Jonny Walker'){
-	    return(user[0]);
-    }else if(user.name==='Andrew'){
-    	return(user[1]);
-    }else{
-    	return(user[2]);
-    }
- }
+let user = users.filter(item => item.name == 'Andrew');
+return(user);
+}
 
 console.log(searhByName());
